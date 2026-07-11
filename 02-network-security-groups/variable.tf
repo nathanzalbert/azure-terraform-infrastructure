@@ -67,7 +67,6 @@ variable "tags" {
     Environment = "Lab"
     ManagedBy   = "Terraform"
   }
-}}
 }
 =======
 variable "resource_group_name" {
