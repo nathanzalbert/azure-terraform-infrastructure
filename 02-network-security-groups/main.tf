@@ -121,7 +121,6 @@ resource "azurerm_subnet_network_security_group_association" "web" {
 resource "azurerm_subnet_network_security_group_association" "management" {
   subnet_id                 = azurerm_subnet.management.id
   network_security_group_id = azurerm_network_security_group.management.id
-}}
 }
 =======
 terraform {
