@@ -22,7 +22,6 @@ tags = {
   Environment = "Development"
   Project     = "Network-Security-Groups-Lab"
   ManagedBy   = "Terraform"
-}}
 }
 =======
 resource_group_name = "rg-nsg-lab"
