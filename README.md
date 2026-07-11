@@ -1,2 +1,4 @@
-# azure-terraform-infrastructure
-Azure networking and security infrastructure deployed with Terraform.
+#01 - Basic Vnet
+
+##Objective
+Create an Azure Virtual Network using Terraform.
