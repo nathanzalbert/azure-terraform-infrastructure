@@ -74,6 +74,7 @@ When finished:
 ```bash
 terraform destroy
 ``````
+```
 =======
 # 02 - Azure Network Security Groups
 

@@ -38,6 +38,7 @@ output "management_network_security_group_id" {
   description = "Resource ID of the management Network Security Group."
   value       = azurerm_network_security_group.management.id
 }}
+}
 =======
 output "resource_group_name" {
   description = "Name of the created Resource Group."

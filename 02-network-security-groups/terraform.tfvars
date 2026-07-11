@@ -23,6 +23,7 @@ tags = {
   Project     = "Network-Security-Groups-Lab"
   ManagedBy   = "Terraform"
 }}
+}
 =======
 resource_group_name = "rg-nsg-lab"
 location            = "East US"
