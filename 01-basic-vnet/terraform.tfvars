@@ -1,39 +1,14 @@
-variable "resource_group_name" {
-  description = "Name of the Azure Resource Group."
-  type        = string
-}
+resource_group_name = "rg-basic-vnet-lab"
+location            = "East US"
 
-variable "location" {
-  description = "Azure region where resources will be created."
-  type        = string
-}
+virtual_network_name          = "vnet-basic-lab"
+virtual_network_address_space = ["10.0.0.0/16"]
 
-variable "virtual_network_name" {
-  description = "Name of the Azure Virtual Network."
-  type        = string
-}
+subnet_name             = "snet-web"
+subnet_address_prefixes = ["10.0.1.0/24"]
 
-variable "virtual_network_address_space" {
-  description = "Address space assigned to the Virtual Network."
-  type        = list(string)
-}
-
-variable "subnet_name" {
-  description = "Name of the subnet."
-  type        = string
-}
-
-variable "subnet_address_prefixes" {
-  description = "Address prefixes assigned to the subnet."
-  type        = list(string)
-}
-
-variable "tags" {
-  description = "Tags assigned to Azure resources."
-  type        = map(string)
-
-  default = {
-    Environment = "Lab"
-    ManagedBy   = "Terraform"
-  }
+tags = {
+  Environment = "Development"
+  Project     = "Azure-Terraform-Lab"
+  ManagedBy   = "Terraform"
 }
